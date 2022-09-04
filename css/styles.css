@@ -43,6 +43,15 @@ img {
   gap: 93px;
   padding: 24px 15px 25px 15px;
 }
+.header-icons {
+  fill: var(--grey);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-icons:hover {
+  fill: #2196f3;
+}
 .nav-box {
   display: flex;
   flex-direction: row;
@@ -73,9 +82,18 @@ img {
   --creme: #f5f4fa;
   --almost-white: #ececec;
   --border-color: #eeeeee;
+  --icons-color: #afb1b8;
 }
 .color-blue {
   color: var(--blue);
+}
+.article-icons-box {
+  background-color: var(--creme);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 25px 0;
+  margin-bottom: 30px;
 }
 .lists {
   display: flex;
@@ -195,7 +213,36 @@ img {
   letter-spacing: 0.03em;
   color: var(--grey);
 }
-
+.team-icons-box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 16px;
+}
+.team-icons-items {
+  fill: var(--icons-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.team-icons-items:hover {
+  fill: var(--white);
+  background-color: var(--blue);
+  cursor: pointer;
+}
+.clients-icons-items {
+  width: 170px;
+  height: 92px;
+  fill: var(--icons-color);
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+}
+.clients-icons-items:hover {
+ fill: var(--blue);
+ border-color: var(--blue);
+  cursor: pointer;
+}
 .portfolio-button {
   color: #212121;
   font-weight: 500;
