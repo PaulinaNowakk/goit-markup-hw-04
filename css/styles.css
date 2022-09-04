@@ -126,7 +126,8 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .banner {
-  background-color: var(--dark-grey);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg) no-repeat;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -311,10 +312,16 @@ img {
   color: var(--grey);
 }
 
-.footer {
+.footer-address {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
   padding: 60px 0;
 }
 .address-list {
@@ -322,4 +329,42 @@ img {
   flex-direction: column;
   gap: 9px;
   font-style: normal;
+}
+
+.footer-team-icons-box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.footer-team-icons-items {
+  fill: var(--white);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-team-icons-items:hover,
+.footer-team-icons-items:focus {
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
+.footer-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.list-box-shadow:hover,
+.list-box-shadow:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
