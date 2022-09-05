@@ -126,8 +126,13 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .banner {
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background.jpg) no-repeat;
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url(../images/background.jpg);
+  border: 1px solid #000000;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -277,9 +282,17 @@ img {
 .portfolio-button-design {
   width: 91px;
 }
-.portfolio-button:hover {
+.portfolio-button:hover,
+.portfolio-button:focus {
   background-color: var(--blue);
   color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-cards:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 .portfolio-cards-list {
   display: flex;
@@ -314,57 +327,30 @@ img {
 
 .footer-address {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.footer {
-  display: flex;
   flex-direction: row;
   gap: 70px;
   padding: 60px 0;
 }
+
 .address-list {
   display: flex;
   flex-direction: column;
   gap: 9px;
   font-style: normal;
+  padding-top: 20px;
 }
-
-.footer-team-icons-box {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
-  padding-top: 16px;
-}
-
-.footer-team-icons-items {
-  fill: var(--white);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.footer-team-icons-items:hover,
-.footer-team-icons-items:focus {
-  background-color: var(--blue);
-  cursor: pointer;
-}
-
-.footer-header {
+.footer-header2 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.143;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
+  padding-top: 12px;
+  padding-bottom: 20px;
 }
-
-.list-box-shadow:hover,
-.list-box-shadow:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
+.footer-icons-box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
